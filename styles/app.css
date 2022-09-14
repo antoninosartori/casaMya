@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(203, 203, 203);
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-size: 50px;
+    color: #000;
+}
+
+.logo{
+    cursor: pointer;
+}
+.logo:hover{
+    color: #fff;
+}
+
+.backArrow{
+    cursor: pointer;
+}
+.backArrow:hover{
+    color: #fff;
+}
+
+.btn-categoriesMain{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    background-color: #fff;
+}
+.btn-categoriesMain:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+.categoriesContainer{
+    position: absolute;
+    background-color: #e1e1e1;
+    top: 100px;
+    right: 0;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+.category-item{
+    margin-bottom: 10px;
+    color: #000;
+}
+.category-item:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.productList-mainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.productList-body, .productList-body-category{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: rgb(203, 203, 203);
+}
+
+.product-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.product-container div h3{
+    margin-bottom: 10px;
+}
+
+.productName-container{
+    flex-grow: 1;
+    width: 33%;
+    padding-left: 15px;
+    border-right: 1px solid #000;
+}
+
+.productDetails-container{
+    width: 37%;
+    padding-left: 15px;
+    border-right: 1px solid #000;
+}
+
+.productImg-container{
+    width: 20%;
+    padding-left: 15px;
+    min-height: 200px;
+    border-right: 1px solid #000;
+}
+
+.productPrice-container{
+    width: 10%;
+    padding-left: 15px;
+    color: rgb(59, 164, 59);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.inactive{
+    display: none;
+}
